@@ -48,5 +48,13 @@
   "directories": {
     "doc": "docs",
     "test": "tests"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keertijanm/YourMediBuddy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Keertijanm/YourMediBuddy/issues"
+  },
+  "homepage": "https://github.com/Keertijanm/YourMediBuddy#readme"
 }
