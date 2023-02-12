@@ -1,9 +1,17 @@
 #header {
+<<<<<<< HEAD
   background-color: #0e0325;
 }
 
 .list-group-item {
   background-color: #0e0325;
+=======
+  background-color:#0e0325;
+}
+
+.list-group-item {
+  background-color: #92f5c8;
+>>>>>>> efca8982ce6c07c46ca504e9624949f12edc46e4
   border: none;
   color: #ffffff;
 }
