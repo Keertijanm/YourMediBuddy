@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!--Meta Data-->
-    <%- include('partial/title.ejs'); %> 
+<head>
+  <!--Meta Data-->
+  <%- include('partial/title.ejs'); %>
 
-    <% if (data.NODE_ENV == 'production') { %>
+    <% if (data.NODE_ENV=='production' ) { %>
       <!-- Production Stylesheets -->
       <link rel="stylesheet" href="assets/production/css/about.min.css">
 
-    <% }else { %>
-      <!-- Development Stylesheets -->
-      <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css">
-      <link rel="stylesheet" href="assets/lib/css/responsive.css">
-      <link rel="stylesheet" href="assets/lib/css/select2.min.css">
-      <link rel="stylesheet" href="assets/lib/css/spacing.css">
-      <link rel="stylesheet" href="assets/lib/css/style.css">
-      <link rel="stylesheet" href="assets/lib/css/owl.carousel.min.css">
-      <link rel="stylesheet" href="assets/lib/css/bootstrap-datepicker.min.css">
-      <link rel="stylesheet" href="assets/lib/css/magnific-popup.css">
-      <link rel="stylesheet" href="assets/css/header.css">
-      
-    <% } %>
-  </head>
+      <% }else { %>
+        <!-- Development Stylesheets -->
+        <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css">
+        <link rel="stylesheet" href="assets/lib/css/responsive.css">
+        <link rel="stylesheet" href="assets/lib/css/select2.min.css">
+        <link rel="stylesheet" href="assets/lib/css/spacing.css">
+        <link rel="stylesheet" href="assets/lib/css/style.css">
+        <link rel="stylesheet" href="assets/lib/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/lib/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="assets/lib/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/header.css">
 
-  <body onLoad="typeWriter()">
-    <!--Header-->
-    <%- include('partial/header.ejs', {data: data }); %>
-    
+        <% } %>
+</head>
+
+<body onLoad="typeWriter()">
+  <!--Header-->
+  <%- include('partial/header.ejs', {data: data }); %>
+
 
     <!--About Start-->
     <div class="about-page pt_60 pb_30">
@@ -36,28 +36,35 @@
         <div class="row">
           <div class="col-md-12">
             <h3>Our Mission</h3>
-            <p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine
-              propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes
-              ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum
-              lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire
-              has.<br></p>
-            <p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos
-              quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.<br></p>
-            <p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere
-              ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad
-              ridens mollis. Ad ius meis suavitate voluptaria.</p>
+            <p>Our mission is to revolutionize the way people access and receive medical care. We believe that every
+              individual deserves quality healthcare, regardless of location or availability of resources.
+            <p>With our platform, we aim to bridge the gap between patients and doctors, connecting you with experienced
+              and licensed healthcare professionals in real-time. Our commitment to patient-centric care drives us to
+              continuously improve and innovate,making sure that your health and wellbeing is our top priority.</p>
+            <p> Whether you're seeking a quick consultation, a second opinion, or ongoing support, we're here to make
+              sure that you receive the best possible medical care. Join us on this journey to a healthier tomorrow, and
+              experience the power of accessible, affordable and convenient healthcare.
+
+
+
+
+
+              <br>
+            </p>
+
             <br>
             <h3>Our Vision</h3>
-            <p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea
-              commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos
-              soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut
-              mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>
-            <p>Ex vix alienum sadipscing, quod melius philosophia id has. Ad qui quem reprimique, quo possit detracto
-              reprimique no, sint reque officiis ei per. Ea regione commune volutpat pro, fabulas facilis omnesque mei
-              ne. Cu unum detracto comprehensam sea, ad vim ancillae principes, ex usu fugit consulatu. Vis te purto
-              equidem voluptatum.<br></p>
-            <p>Detracto contentiones te est, brute ipsum consul an vis. Mea ei regione blandit ullamcorper, definiebas
-              constituam vix ei. At his ludus nonumes gloriatur. Ne vim tamquam nonumes.<br></p>
+            <p> Our vision at Online Doctor Consultancy is to create a world where access to quality healthcare is a
+              right, not a privilege. We envision a future where every individual can receive medical attention and
+              support, regardless of their location or circumstances.</p>
+            <p>Our platform aims to be the go-to destination for all your healthcare needs, providing a comprehensive
+              and seamless experience. Our dedicated team of healthcare professionals and cutting-edge technology will
+              ensure that you receive the best possible medical care, no matter where you are.
+            <p> With our platform, we want to empower people to take control of their health and wellbeing, and provide
+              them with the tools and support they need to lead healthier and happier lives. </p>
+            <p>Join us as we work towards building a healthier future, one consultation at a time.</p>
+
+
             <br>
           </div>
         </div>
@@ -68,26 +75,27 @@
     <!--Footer-->
     <%- include('partial/footer.ejs'); %>
 
-    <script>
-      var i = 0;
-      var txt = 'WELCOME TO MEDBUDDY';
-      var speed = 60;
-      function typeWriter() {
-        if (i < txt.length) {
-          document.getElementById("typeit").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
+      <script>
+        var i = 0;
+        var txt = 'WELCOME TO YourMediBuddy';
+        var speed = 60;
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("typeit").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
         }
-      }
-    </script>
+      </script>
 
-    <!-- JavaScript -->
-    <script defer src="assets/lib/js/jquery-3.4.1.min.js"></script>
-    <script defer src="/assets/lib/js/popper.min.js"></script>
-    <script defer src="assets/lib/js/bootstrap.bundle.min.js"></script>
-    <script defer src="assets/lib/js/all.min.js"></script>
-    <script defer src="assets/lib/js/select2.full.min.js"></script>
-    <script defer src="assets/js/about.js"></script>
+      <!-- JavaScript -->
+      <script defer src="assets/lib/js/jquery-3.4.1.min.js"></script>
+      <script defer src="/assets/lib/js/popper.min.js"></script>
+      <script defer src="assets/lib/js/bootstrap.bundle.min.js"></script>
+      <script defer src="assets/lib/js/all.min.js"></script>
+      <script defer src="assets/lib/js/select2.full.min.js"></script>
+      <script defer src="assets/js/about.js"></script>
 
-  </body>
+</body>
+
 </html>
